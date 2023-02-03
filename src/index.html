@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <title>feather</title>
 </head>
 <body>
@@ -103,18 +104,18 @@
             <a href="#" class="enjoy__block-link">Shop Now</a>
           </div>
       </div>
-      <div class="enjoy__block">
-        <div class="enjoy__block-text-wrapper">
+      <div class="enjoy__block enjoy__block-three">
+        <div class="enjoy__block-text-wrapper enjoy__block-text-wrapper-three">
           <h4 class="enjoy__block-title">Furniture for business, made simple.</h4>
           <p class="enjoy__block-text">Say goodbye to cost, complexity, and commitment of furniture. Feather makes it easy with affordable rental plans, white
           glove delivery and best-in-class account service.</p>
           <a href="#" class="enjoy__block-link">Visit Feather For Business</a>
         </div>
-        <img enjoy__block-image src="./images/enjoy-3.png" alt="">
+        <img class="enjoy__block-image enjoy__block-image-three" src="./images/enjoy-3.png" alt="">
       </div>
-      <div class="enjoy__block">
-          <img enjoy__block-image src="./images/enjoy-4.png" alt="">
-          <div class="enjoy__block-text-wrapper">
+      <div class="enjoy__block enjoy__block-four">
+          <img class="enjoy__block-image enjoy__block-image-four" src="./images/enjoy-4.png" alt="">
+          <div class="enjoy__block-text-wrapper enjoy__block-text-wrapper-four">
             <h4 class="enjoy__block-title">Never assemble furniture again.</h4>
             <p class="enjoy__block-text">We move a lot. There are countless floor plans and roommates (oh, and your evolving tastes) between here and there. With
             Feather, furnish your space without breaking a sweat or reaching for a screwdriver.</p>
@@ -123,6 +124,114 @@
       </div>
     </div>
   </section>
+
+  <section class="slider">
+    <div class="container">
+      <div class="slider__title">
+        Shop our Bestsellers
+      </div>
+      <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true"  space-between="15" slides-per-view="4">
+        <swiper-slide>
+          <img class="slider-img" src="./images/slider-1.png" alt="">
+          <p class="slider-title">Cooper Dining Table</p>
+          <p class="slider-text">rent for $15/mo or buy for $314</p>
+        </swiper-slide>
+        <swiper-slide>
+            <img class="slider-img" src="./images/slider-2.png" alt="">
+            <p class="slider-title">Croft Media Console</p>
+            <p class="slider-text">rent for $15/mo or buy for $314</p>
+        </swiper-slide>
+        <swiper-slide>
+            <img class="slider-img" src="./images/slider-3.png" alt="">
+            <p class="slider-title">Essex Dining Chair</p>
+            <p class="slider-text">rent for $15/mo or buy for $314</p>
+        </swiper-slide>
+        <swiper-slide>
+            <img class="slider-img" src="./images/slider-4.png" alt="">
+            <p class="slider-title">Ludlow Sofa</p>
+            <p class="slider-text">rent for $15/mo or buy for $314</p>
+        </swiper-slide>
+        <swiper-slide>
+            <img class="slider-img" src="./images/slider-1.png" alt="">
+            <p class="slider-title">Cooper Dining Table</p>
+            <p class="slider-text">rent for $15/mo or buy for $314</p>
+        </swiper-slide>
+        <swiper-slide>
+            <img class="slider-img" src="./images/slider-2.png" alt="">
+            <p class="slider-title">Croft Media Console</p>
+            <p class="slider-text">rent for $15/mo or buy for $314</p>
+        </swiper-slide>
+        <swiper-slide>
+            <img class="slider-img" src="./images/slider-3.png" alt="">
+            <p class="slider-title">Essex Dining Chair</p>
+            <p class="slider-text">rent for $15/mo or buy for $314</p>
+        </swiper-slide>
+        <swiper-slide>
+          <img class="slider-img" src="./images/slider-4.png" alt="">
+          <p class="slider-title">Ludlow Sofa</p>
+          <p class="slider-text">rent for $15/mo or buy for $314</p>
+        </swiper-slide>
+      </swiper-container>
+      <div class="slider__link">
+          <a href="#">Shop All Furniture</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <img class="banner__img" src="./images/banner.png" alt="banner">
+    <div class="banner__wrapper">
+        <img src="./images/banner-logo.png" alt="logo" class="banner__wrapper-logo">
+        <h3 class="banner__wrapper-title">Floyd Furniture Meets Feather Flexibility</h3>
+        <button class="banner__wrapper-button">Explore Floyd Furniture</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="review">
+    <div class="container">
+      <h3 class="review__title">The Reviews are In</h3>
+    </div>
+    <swiper-container class="mySwiper" space-between="30" slides-per-view="3">
+      <swiper-slide class="mySwiper__slide">
+        <div class="mySwiper__wrapper">
+            <div class="stars__wrapper">
+              <img src="./images/star-1.svg" alt="">
+              <img src="./images/star-1.svg" alt="">
+              <img src="./images/star-1.svg" alt="">
+              <img src="./images/star-1.svg" alt="">
+              <img src="./images/star-1.svg" alt="">
+            </div>
+            <p class="mySwiper__text">Honestly BEST EXPERIENCE moving ever.</p>
+            <p class="mySwiper__text-second">- Julie, San Francisco, CA</p>
+        </div>
+      </swiper-slide>
+      <swiper-slide class="mySwiper__slide">
+            <div class="mySwiper__wrapper">
+              <div class="stars__wrapper">
+                <img src="./images/star-2.svg" alt="">
+                <img src="./images/star-2.svg" alt="">
+                <img src="./images/star-2.svg" alt="">
+                <img src="./images/star-2.svg" alt="">
+                <img src="./images/star-2.svg" alt="">
+              </div>
+              <p class="mySwiper__text">Extremely easy! Browsed for furniture and it was in my new apartment within a week.</p>
+              <p class="mySwiper__text-second">- Julie, San Francisco, CA</p>
+            </div>
+        
+      </swiper-slide>
+      <swiper-slide class="mySwiper__slide">
+    
+      </swiper-slide>
+      <swiper-slide>Slide 4</swiper-slide>
+      <swiper-slide>Slide 5</swiper-slide>
+      <swiper-slide>Slide 6</swiper-slide>
+      <swiper-slide>Slide 7</swiper-slide>
+      <swiper-slide>Slide 8</swiper-slide>
+      <swiper-slide>Slide 9</swiper-slide>
+    </swiper-container>
+  </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 </body>
 </html>
