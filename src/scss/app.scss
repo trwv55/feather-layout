@@ -104,6 +104,8 @@ input::-webkit-inner-spin-button {
             }
            }
          }
+
+  
 }
 
 .start {
@@ -246,8 +248,14 @@ input::-webkit-inner-spin-button {
       .shop__image-wrapper {
         flex-wrap: wrap;
         justify-content: center;
+        margin-right: 30px;
+        
         .shop__image-item  {
           margin-top: 80px;
+
+          &_dining {
+            margin-right: 30px;
+          }
         }
       }
     }
@@ -458,11 +466,6 @@ input::-webkit-inner-spin-button {
       width: 100%;
       height: 100%;
       position: relative;
-
-        // @media screen and (max-width: $medium) {
-        //     position: static;
-        //     padding-left: 0px;
-        //   }
     }
   
     swiper-slide {
@@ -569,6 +572,10 @@ input::-webkit-inner-spin-button {
     padding-top: 143px;
     font-weight: 400;
     text-align: center;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 45px;
+      }
   }
 
   .mySwiper {
@@ -588,6 +595,11 @@ input::-webkit-inner-spin-button {
         border-radius: 4px;
         cursor: pointer;
 
+          @media screen and (max-width: $mobile) {
+            max-width: 300px;
+            max-height: 200px;
+          }
+
         .mySwiper__wrapper {
           padding: 34px 72px 62px 34px;
 
@@ -596,6 +608,11 @@ input::-webkit-inner-spin-button {
             font-size: 18px;
             line-height: 28px;
             padding-top: 26px;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 15px;
+                line-height: 24px;
+              }
           }
 
           .mySwiper__text-second {
@@ -654,6 +671,11 @@ input::-webkit-inner-spin-button {
         font-size: 58px;
         line-height: 80px;
       }
+
+            @media screen and (max-width: $mobile) {
+              font-size: 48px;
+              line-height: 60px;
+            }
   }
 
   .logos__wrapper {
@@ -661,6 +683,14 @@ input::-webkit-inner-spin-button {
     padding-bottom: 108px;
     display: flex;
     justify-content: space-between;
+
+        @media screen and (max-width: $mediumSm) {
+            flex-wrap: wrap;
+
+            > img {
+              margin-top: 20px;
+            }
+          }
   }
  }
 
@@ -671,6 +701,10 @@ input::-webkit-inner-spin-button {
     display: flex;
     padding-top: 82px;
     padding-bottom: 208px;
+
+    @media screen and (max-width: $mediumSm) {
+        flex-wrap: wrap;
+      }
 
     .footer__column {
       margin-right: 80px;
@@ -696,6 +730,10 @@ input::-webkit-inner-spin-button {
     }
 
     .footer__column-four-first {
+
+      @media screen and (max-width: $mediumSm) {
+          margin-top: 50px;
+        }
 
       .socials-wrapper {
         margin-top: 24px;
@@ -727,8 +765,14 @@ input::-webkit-inner-spin-button {
         bottom: -230px;
 
         @media screen and (max-width: $mediumSm) {
-            right: 200px;
+            bottom: -132px;
+            right: 345px;
           }
+
+            @media screen and (max-width: $mobile) {
+              bottom: -132px;
+              right: 155px;
+            }
       }
     }
   }
